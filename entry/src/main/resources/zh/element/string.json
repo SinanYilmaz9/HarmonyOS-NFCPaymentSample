@@ -1,0 +1,24 @@
+{
+  "string": [
+    {
+      "name": "entry_MainAbility",
+      "value": "entry_MainAbility"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "mainability_HelloWorld",
+      "value": "新世界"
+    },
+    {
+      "name": "mainability_Firstapp",
+      "value": "这是我的第一个应用程序"
+    },
+    {
+      "name": "hceservice_description",
+      "value": "NfcPaymentOption"
+    }
+  ]
+}

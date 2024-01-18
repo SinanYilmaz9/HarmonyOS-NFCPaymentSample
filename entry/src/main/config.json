@@ -1,0 +1,131 @@
+{
+  "app": {
+    "bundleName": "com.example.wearablehq",
+    "vendor": "harmonyos",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.example.wearablehq",
+    "name": ".MyApplication",
+    "mainAbility": "com.example.wearablehq.MainAbility",
+    "deviceType": [
+      "wearable"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry",
+      "installationFree": false
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "unspecified",
+        "visible": true,
+        "name": "com.example.wearablehq.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "$string:entry_MainAbility",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "name": "com.example.wearablehq.HceService",
+        "icon": "$media:icon",
+        "description": "$string:hceservice_description",
+        "type": "service",
+        "backgroundModes": [
+          "dataTransfer"
+        ],
+        "visible": true,
+        "metaData": {
+          "customizeData": [
+            {
+              "name": "payment-aid",
+              "value": "325041592E5359532E4444463031"
+            },
+            {
+              "name": "other-aid",
+              "value": "A0000000041010|A0000000042203|A0000000031010"
+            },
+            {
+              "name": "paymentAid",
+              "value": "325041592E5359532E4444463031"
+            },
+            {
+              "name": "otherAid",
+              "value": "A0000000041010|A0000000042203|A0000000031010"
+            }
+          ]
+        },
+        "skills": [
+          {
+            "actions": [
+              "ohos.nfc.cardemulation.action.HOST_APDU_SERVICE"
+            ]
+          }
+        ]
+      },
+      {
+        "icon": "$media:icon",
+        "name": "com.example.wearablehq.SecondAbility",
+        "description": "",
+        "type": "page"
+      }
+    ],
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.NFC_TAG"
+      },
+      {
+        "name": "ohos.permission.NFC_CARD_EMULATION"
+      },
+      {
+        "name": "ohos.permission.INTERNET",
+        "reason": "internet",
+        "usedScene": {
+          "ability": [
+            "com.example.wearablehq.MainAbility"
+          ],
+          "when": "always"
+        }
+      },
+      {
+        "name": "ohos.permission.GET_NETWORK_INFO",
+        "reason": "networkinfo",
+        "usedScene": {
+          "ability": [
+            "com.wearable.demoprj.MainAbility"
+          ],
+          "when": "always"
+        }
+      },
+      {
+        "name": "ohos.permission.VIBRATE"
+      },
+      {
+        "name": "ohos.permission.LOCATION",
+        "reason": "location",
+        "usedScene": {
+          "ability": [
+            "com.wearable.demoprj.MainAbility"
+          ],
+          "when": "inuse"
+        }
+      }
+    ]
+  }
+}

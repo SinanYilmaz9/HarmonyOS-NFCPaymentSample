@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <Text
+        ohos:id="$+id:text"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:layout_alignment="vertical_center"
+        ohos:text="NfcApiTest."
+        ohos:text_size="20fp"/>
+
+    <Button
+        ohos:id="$+id:button"
+        ohos:height="50vp"
+        ohos:width="match_parent"
+        ohos:background_element="$graphic:btn_common"
+        ohos:layout_alignment="horizontal_center"
+        ohos:margin="20vp"
+        ohos:text="Test Foreground"
+        ohos:text_size="20fp"/>
+
+    <Button
+        ohos:id="$+id:button2"
+        ohos:height="50vp"
+        ohos:width="match_parent"
+        ohos:background_element="$graphic:btn_common"
+        ohos:layout_alignment="horizontal_center"
+        ohos:margin="20vp"
+        ohos:text="Test HCE"
+        ohos:text_size="20fp"/>
+</DirectionalLayout>
